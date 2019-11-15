@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="./css/blog_style.css" rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    </head>
+    <body>
+
+
+
+
+        <header class="header_md">
+            <nav style='background-color: #0e1823' class="navbar
+                navbar-expand-md navbar-dark">
+                <div class="container">
+                    <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                    <div class='collapse navbar-collapse'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <div class="container h-100">
+                                    <div class="d-flex justify-content-center
+                                        h-100">
+                                        <div class="searchbar">
+                                            <input class="search_input"
+                                                type="text" name=""
+                                                placeholder="Search...">
+                                            <a href="#" class="search_icon">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn btn-primary
+                                        btn_class">LOGIN</button>
+                                </a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn
+                                        btn-secondary btn_class">SIGN UP</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="site-header sticky-top bg-secondary header_link"
+                id='navbarResponsive'>
+                <div class="container d-flex flex-column flex-md-row
+                    justify-content-between" id='navbarResponsive'>
+                    <a class="py-2 d-none d-md-inline-block" href="#">
+                        <i class="fas fa-home"></i>HOME
+                    </a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">+ADD
+                        ARTICLE</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">USERS</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">CHAT</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">QUIZ</a>
+                </div>
+            </nav>
+        </header>
+        <div class="header_mobile">
+            <nav style='background-color: #0e1823' class="navbar navbar-dark">
+                <div class="container">
+                    <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                    <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navbarResponsiv">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class='collapse navbar-collapse' id='navbarResponsiv'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">+ADD ARTICLE</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">USERS</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">CHAT</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">QUIZ</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class='navbar-item'>
+                                <a class="nav-link" href="#">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav  style="background-color:	#708090">
+                <div class="container h-100" style="padding-top:
+                    5px;padding-bottom: 5px;">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="searchbar">
+                            <input class="search_input" type="text" name=""
+                                placeholder="Search...">
+                            <a href="#" class="search_icon"><i class="fas
+                                    fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">IT</a>
+            <a href="#">FIZIC</a>
+            <a href="#">WEB</a>
+            <a href="#">MAT</a>
+        </div>
+        <span onclick="openNav()" id="categoryButton">
+            <p class="categor_mob"> <i class="fas fa-grip-horizontal"></i>Categories</p>
+        </span>
+
+        <section class="bg0">
+            <div class="container">
+                <div class="row m-rl--1">
+                    <div class="col-md-6 p-rl-1 p-b-2">
+                        <div class="bg-img1 size-a-3 how1 pos-relative"
+                            style="background-image: url(./images/latest-05.jpg);">
+                            <a href="#" class="dis-block how1-child1 trans-03"></a>
+                            <div class="flex-col-e-s s-full p-rl-25 p-tb-24">
+                                <h3 class="how1-child2 m-t-14">
+                                    <a href="#" class="how-txt1 size-a-7 f1-l-2
+                                        cl0 hov-cl10 trans-03">
+                                        London ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </a>
+                                </h3>
+                                <a href="#" class="dis-block how1-child2 f1-s-2
+                                    cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5
+                                    p-t-2">
+                                    Admin - Jun 03
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 p-rl-1">
+                        <div class="row m-rl--1">
+                            <div class="col-12 p-rl-1 p-b-2">
+                                <div class="bg-img1 size-a-4 how1 pos-relative"
+                                    style="background-image:
+                                    url(./images/entertaiment-10.jpg);">
+                                    <a href="#" class="dis-block how1-child1"></a>
+                                    <div class="flex-col-e-s s-full p-rl-25
+                                        p-tb-24">
+                                        <h3 class="how1-child2 m-t-14">
+                                            <a href="#" class="how-txt1 size-a-7
+                                                f1-l-2 cl0 hov-cl10">
+                                                London ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="dis-block how1-child2
+                                            f1-s-2 cl0 bo-all-1 bocl0 hov-btn1
+                                            p-rl-5 p-t-2">
+                                            Admin - Jun 03
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 p-rl-1 p-b-2">
+                                <div class="bg-img1 size-a-5 how1 pos-relative"
+                                    style="background-image:
+                                    url(./images/entertaiment-07.jpg);">
+                                    <a href="#" class="dis-block how1-child1"></a>
+                                    <div class="flex-col-e-s s-full p-rl-25
+                                        p-tb-20">
+                                        <h3 class="how1-child2 m-t-14">
+                                            <a href="#" class="how-txt1 size-a-7
+                                                f1-l-2 cl0 hov-cl10">
+                                                London ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="dis-block how1-child2
+                                            f1-s-2 cl0 bo-all-1 bocl0 hov-btn1
+                                            p-rl-5 p-t-2">
+                                            Admin - Jun 03
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 p-rl-1 p-b-2">
+                                <div class="bg-img1 size-a-5 how1 pos-relative"
+                                    style="background-image:
+                                    url(./images/entertaiment-05.jpg);">
+                                    <a href="#" class="dis-block how1-child1"></a>
+                                    <div class="flex-col-e-s s-full p-rl-25
+                                        p-tb-20">
+                                        <h3 class="how1-child2 m-t-14">
+                                            <a href="#" class="how-txt1 size-a-7
+                                                f1-l-2 cl0 hov-cl10">
+                                                London ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="dis-block how1-child2
+                                            f1-s-2 cl0 bo-all-1 bocl0 hov-btn1
+                                            p-rl-5 p-t-2">
+                                            Admin - Jun 03
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <main class="col-md-8 col-lg-8 main">
+                        <div class="container">
+                            <div class="row p-t-35">
+                                <div class="card mb-3 card_size">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                            <div class="img-hover-zoom">
+                                                <img src="./images/post_14.jpg"
+                                                class="card-img" alt="...">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card_body">
+                                                <h5 class="card-title"><a
+                                                        href="#">Card title</a>
+                                                </h5>
+                                                <p class="card-text"><a
+                                                        href="#">This is a wider
+                                                        card with supporting
+                                                        text below as a natural
+                                                        lead-in to additional
+                                                        content. This content is
+                                                        a little bit longer
+                                                        jdhfjwsfh kwfjkwefn .</a>
+                                                </p>
+                                                <hr>
+                                                <p class="card_text"><small
+                                                        class="text-muted">
+                                                        <i class="fas fa-tags"></i>Tags:
+                                                        <a href="#">Loren</a></small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-3 card_size">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                                <div class="img-hover-zoom">
+                                            <img src="./images/post_18.jpg"
+                                                class="card-img" alt="...">
+                                                </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card_body">
+                                                <h5 class="card-title"><a
+                                                        href="#">Card title</a>
+                                                </h5>
+                                                <p class="card-text"><a
+                                                        href="#">This is a wider
+                                                        card with supporting
+                                                        text below as a natural
+                                                        lead-in to additional
+                                                        content. This content is
+                                                        a little bit longer
+                                                        jdhfjwsfh kwfjkwefn .</a>
+                                                </p>
+                                                <hr>
+                                                <p class="card_text"><small
+                                                        class="text-muted">
+                                                        <i class="fas fa-tags"></i>Tags:
+                                                        <a href="#">Loren</a></small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-3 card_size">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                                <div class="img-hover-zoom">
+                                            <img src="./images/post_16.jpg"
+                                                class="card-img" alt="...">
+                                                </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card_body">
+                                                <h5 class="card-title"><a
+                                                        href="#">Card title</a>
+                                                </h5>
+                                                <p class="card-text"><a
+                                                        href="#">This is a wider
+                                                        card with supporting
+                                                        text below as a natural
+                                                        lead-in to additional
+                                                        content. This content is
+                                                        a little bit longer
+                                                        jdhfjwsfh kwfjkwefn .</a>
+                                                </p>
+                                                <hr>
+                                                <p class="card_text"><small
+                                                        class="text-muted">
+                                                        <i class="fas fa-tags"></i>Tags:
+                                                        <a href="#">Loren</a></small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-3 card_size">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-6">
+                                                <div class="img-hover-zoom">
+                                            <img src="./images/post_22.jpg"
+                                                class="card-img" alt="...">
+                                                </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card_body">
+                                                <h5 class="card-title"><a
+                                                        href="#">Card title</a>
+                                                </h5>
+                                                <p class="card-text"><a
+                                                        href="#">This is a wider
+                                                        card with supporting
+                                                        text below as a natural
+                                                        lead-in to additional
+                                                        content. This content is
+                                                        a little bit longer
+                                                        jdhfjwsfh kwfjkwefn .</a>
+                                                </p>
+                                                <hr>
+                                                <p class="card_text"><small
+                                                        class="text-muted">
+                                                        <i class="fas fa-tags"></i>Tags:
+                                                        <a href="#">Loren</a></small></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="sh-pagination sh-default-color"><ul
+                                        class="page-numbers">
+                                        <li><span class="page-numbers current">1</span></li>
+                                        <li><a class="page-numbers" href="#">2</a></li>
+                                        <li><a class="page-numbers" href="#">3</a></li>
+                                        <li><a class="next page-numbers"
+                                                href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                                
+
+                            </div>
+                        </main>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="row">
+                                <aside class="col-sm-6 col-md-12 aside-1">
+                                    <div class="categories-comment-like-item
+                                        div_categories-comment-like categor_div"><h3
+                                            class="categories-comment-like_title">Categories</h3>
+                                        <ul>
+                                            <li class="categor-comment-like_item"><a
+                                                    href="#">WEB</a>
+                                                <span class="cat_count">10</span>
+                                            </li>
+                                            <li class="categor-comment-like_item"><a
+                                                    href="#">IT</a>
+                                                <span class="cat_count">5</span>
+                                            </li>
+                                            <li
+                                                class="categor-comment-like_item"><a
+                                                    href="#">MAT</a>
+                                                <span class="cat_count">1</span>
+                                            </li>
+                                            <li
+                                                class="categor-comment-like_item"><a
+                                                    href="#">IT</a>
+                                                <span class="cat_count">4</span>
+                                            </li>
+                                            <li
+                                                class="categor-comment-like_item"><a
+                                                    href="#">IT</a>
+                                                <span class="cat_count">4</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="categories-comment-like-item
+                                        div_categories-comment-like"><h3
+                                            class="categories-comment-like_title"style="font-size:
+                                            25px;">Most commented articles</h3>
+                                        <ul>
+                                            <li class="categor-comment-like_item">
+                                                <a href="#">What is Lorem what
+                                                    is Lorem ?</a>
+                                                    
+                                            </li>
+                                            <li class="categor-comment-like_item">
+                                                <a href="#">What is Lorem what
+                                                    is Lorem ?</a>
+                                            </li>
+                                            <li class="categor-comment-like_item">
+                                                <a href="#">What is Lorem what
+                                                    is Lorem ?</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="categories-comment-like-item
+                                        div_categories-comment-like"><h3
+                                            class="categories-comment-like_title"style="font-size:
+                                            25px;">Most like articles</h3>
+                                        <ul>
+                                            <li class="categor-comment-like_item">
+                                                <a href="#">What is Lorem what
+                                                    is Lorem ?</a>
+                                                   
+                                            </li>
+                                            <li class="categor-comment-like_item">
+                                                <a href="#">What is Lorem what
+                                                    is Lorem ?</a>
+                                            </li>
+                                            <li class="categor-comment-like_item">
+                                                <a href="#">What is Lorem what
+                                                    is Lorem ?</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <footer class="col-xs-12">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x
+                                        fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x
+                                        fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x
+                                        fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted text-center">Copyright © Your
+                        Website 2019</p>
+                </div>
+            </footer>
+
+            <script>
+                    function openNav()
+                    {
+                        document.getElementById("mySidenav").style.width = "100%";
+                    }
+                    function closeNav()
+                    {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                    var windowHeight = window.innerHeight
+                    document.getElementById("categoryButton").style.top = windowHeight/2+"px"
+
+                </script>
+        </body>
+    </html>
