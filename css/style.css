@@ -245,6 +245,16 @@
   color: black;
   font-weight: 600; }
 
+.post-meta {
+  font-size: 10px;
+  font-style: italic;
+  margin-top: 0px;
+  color: #868e96; }
+
+.post-meta a {
+  color: #212529;
+  text-decoration: none; }
+
 .div_categories-comment-like ul {
   list-style: none;
   padding: 0;
@@ -394,4 +404,15 @@ ul.page-numbers a, ul.page-numbers span {
 .list-inline-item a:hover {
   color: #007bff; }
 
-/*# sourceMappingURL=blog_style.css.map */
+.content {
+  padding: 16px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.sticky + .content {
+  padding-top: 102px; }
+
+/*# sourceMappingURL=style.css.map */
