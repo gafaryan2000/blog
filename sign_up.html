@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="./css/sign_up.css" rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+        <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+            
+    </head>
+    <body style="background:#f8f9fa!important">
+            <div class="container ">
+                <div class="row regist_row">
+                    <div class="col-md-12">
+                            <div class="row justify-content-center">
+                                <h3>SIGN UP</h3>
+                            </div>
+                        <div class="row justify-content-center">
+                                <div class="col-md-4 registr_col">
+                                        <label class="regist_text">First Name</label>
+                                        <input type="text" class="form-control regist_inp" placeholder="First Name">
+
+                                    </div>
+                                    <div class="col-md-4 registr_col">
+                                            <label class="regist_text">Last Name</label>
+                                            <input type="text" class="form-control regist_inp" placeholder="Last Name">
+
+                                        </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                                <div class="col-md-4 registr_col">
+                                        <label class="regist_text">Username</label>
+                                        <input type="text" class="form-control regist_inp" placeholder="Username">
+                                    </div>
+                                    <div class="col-md-4 registr_col" >
+                                            <label class="regist_text">Email</label>
+                                            <input type="text" class="form-control regist_inp"placeholder="Email" >
+                                        </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                                <div class="col-md-4 registr_col">
+                                        <label class="regist_text">Password</label>
+                                        <input type="password" class="form-control regist_inp" placeholder="Password">
+
+                                    </div>
+                                    <div class="col-md-4 registr_col">
+                                            <label class="regist_text">Confirm Password</label>
+						<input type="password" class="form-control regist_inp" placeholder="Confirm Password">
+                                        </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                                <div class="col-md-8 py-2">
+                                        <h4>Preference</h4>
+                                        <select id="example-getting-started" multiple="multiple" >
+                                                <span class="multiselect-selected-text">Choose your country</span>
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="onions">Onions</option>
+                                        </select>
+                                    </div>
+                                      
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 registr_check">
+                                <div class="custom-file" id="customFile" lang="es">
+                                        <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                        <label class="custom-file-label" for="exampleInputFile">
+                                           Select file...
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 registr_check" >
+                                    <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" >
+                                            <label class="form-check-label ">Is subcscribed to the newsletter</label>
+                                          </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                                <div class="col-md-2 ">
+                                    <div class="btn_signup">
+                                        <a href="#">SIGN UP</a>
+                                    </div>
+                                </div>
+
+                        </div>
+
+                       
+
+                    </div>
+
+                </div>
+       
+
+            </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-getting-started').multiselect();
+    });
+</script>
+    </body>
+    </html>

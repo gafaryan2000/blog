@@ -1,0 +1,72 @@
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #353b48; }
+
+.log_text {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  color: #353b48; }
+
+.log_col {
+  height: 100px; }
+
+.log_inp {
+  border: 2px solid silver;
+  border-radius: 25px;
+  height: 50px; }
+
+.log_gm_soc, .log_fb_soc, .log_tw_soc {
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 10px; }
+  .log_gm_soc a, .log_fb_soc a, .log_tw_soc a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif; }
+
+.log_gm_soc {
+  margin-top: 20px;
+  background: #DD4B39; }
+
+.log_fb_soc {
+  margin-top: 20px;
+  background: #32508E; }
+
+.log_tw_soc {
+  margin-top: 20px;
+  background: #55ACEE; }
+
+.login_btn {
+  width: 100px;
+  height: 50px;
+  background: #353b48;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 25px; }
+  .login_btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700; }
+
+.loginwith {
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif; }
+
+.now_reg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .now_reg a {
+    text-decoration: none;
+    font-weight: 700; }
+
+.text {
+  padding-top: 10px;
+  color: #353b48; }
+
+/*# sourceMappingURL=login.css.map */
