@@ -111,5 +111,62 @@
 .col-pad {
   padding-bottom: 25px; }
 
-.newquiz {
-  font-size: 1.25rem; }
+ul.page-numbers {
+  display: table;
+  list-style: none;
+  background-color: #f4f4f4;
+  padding: 5px 4px;
+  border-radius: 30px;
+  border-width: 0; }
+  ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 2px;
+    text-align: center; }
+
+ul.page-numbers .current {
+  color: #fff;
+  background-color: #353b48;
+  border-radius: 30px; }
+
+ul.page-numbers .current:hover {
+  background-color: #007bff; }
+
+ul.page-numbers a {
+  text-decoration: none;
+  color: #353b48; }
+
+ul.page-numbers a:hover {
+  color: #007bff; }
+
+ul.page-numbers .current {
+  font-weight: 700; }
+
+ul.page-numbers a, ul.page-numbers span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 0; }
+
+.sh-pagination {
+  padding-bottom: 20px; }
+
+.list-inline-item a {
+  color: #353b48; }
+
+.list-inline-item a:hover {
+  color: #007bff; }
+
+.content {
+  padding: 16px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.sticky + .content {
+  padding-top: 102px; }
