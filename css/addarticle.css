@@ -72,34 +72,16 @@
     display: block; } }
 
 .row {
-  display: block;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   padding: 3rem; }
-  .row .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .row .card .card-title h3 {
+  .row .card {
+    padding: 50px; }
+    .row .card h2 {
+      text-align: center; }
+    .row .card small {
       font-family: "Times New Roman", Times, serif; }
-
-.card-body h3 {
-  font-family: "Times New Roman", Times, serif; }
-
-.fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
-
-.down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
 
 .list-inline-item a {
   color: #353b48; }

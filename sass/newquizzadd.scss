@@ -5,14 +5,15 @@
     color: white;
 }
 
-.header_link a:hover {
+.header_link a:hover 
+{
     color: LightGray;
 }
 
 .nav-link {
     .btn_class {
         width: 100px;
-        border-radius: 20px;    
+        border-radius: 20px;
     }
 }
 
@@ -78,6 +79,13 @@
     
 }
 
+.question1{
+    display: flex;
+    justify-content: center;
+    i{
+        padding: 5px;
+    }
+}
 .row{
     display: block;
     justify-content: center;
@@ -93,30 +101,6 @@
     }
 }
 
-.card-body{
-    h3{
-        font-family: "Times New Roman", Times, serif;
-
-    }
-}
-
-.fixed-top{
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-.down{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.list-inline-item a{
-    color: #353b48;
-}
-
-.list-inline-item a:hover  {
-    color: #007bff;
-}
+.pad{
+    padding: 20px;
+}  

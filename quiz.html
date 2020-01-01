@@ -1,239 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/quiz.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
-<link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/quiz.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    </head>
+    <body>
         <header class="header_md">
-                <nav style='background-color: #0e1823' class="navbar
-                    navbar-expand-md navbar-dark">
-                    <div class="container">
-                        <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
-                        <div class='collapse navbar-collapse'>
-                            <ul class='navbar-nav ml-auto'>
-                                <li class='navbar-item margin-right-for-navbar-li'>
-                                    <div class="container h-100">
-                                        <div class="d-flex justify-content-center
-                                            h-100">
-                                            <div class="searchbar">
-                                                <input class="search_input"
-                                                    type="text" name=""
-                                                    placeholder="Search...">
-                                                <a href="#" class="search_icon">
-                                                    <i class="fas fa-search"></i>
-                                                </a>
-                                            </div>
+            <nav style='background-color: #0e1823' class="navbarnavbar-expand-md navbar-dark">
+                <div class="container">
+                    <a class='navbar-brand ' href="#">
+                        <h3>LOGO</h3>
+                    </a>
+                    <div class='collapse navbar-collapse'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <div class="container h-100">
+                                    <div class="d-flex justify-content-center h-100">
+                                        <div class="searchbar">
+                                            <input class="search_input" type="text" name="" placeholder="Search...">
+                                            <a href="#" class="search_icon">
+                                                <i class="fas fa-search"></i>
+                                            </a>
                                         </div>
                                     </div>
+                                </div>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn btn-primary btn_class">LOGIN</button>
+                                </a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn btn-secondary btn_class">SIGN UP</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="site-header sticky-top bg-secondary header_link" id='navbarResponsive'>
+                <div class="container d-flex flex-column flex-md-row justify-content-between" id='navbarResponsive'>
+                    <a class="py-2 d-none d-md-inline-block" href="index.html">
+                        <i class="fas fa-home"></i>HOME
+                    </a>
+                    <a class="py-2 d-none d-md-inline-block" href="addarticle.html">+ADD ARTICLE</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">USERS</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">CHAT</a>
+                    <a class="py-2 d-none d-md-inline-block" href="quiz.html">QUIZ</a>
+                </div>
+            </nav>
+        </header>
+        <div class="header_mobile">
+            <nav style='background-color: #0e1823' class="navbar navbar-dark">
+                <div class="container">
+                    <a class='navbar-brand ' href="#">
+                        <h3>LOGO</h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiv">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class='collapse navbar-collapse' id='navbarResponsiv'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="addarticle.html">+ADD ARTICLE</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">USERS</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">CHAT</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="quiz.html">QUIZ</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class='navbar-item'>
+                                <a class="nav-link" href="#">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav  style="background-color:	#708090">
+                <div class="container h-100" style="padding-top:5px;padding-bottom: 5px;">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="searchbar">
+                            <input class="search_input" type="text" name="" placeholder="Search...">
+                            <a href="#" class="search_icon">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <section class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <main class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-5 col-pad">
+                                <div class="card" >
+                                    <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <div class="end">
+                                            <div class="start">
+                                                <a href="quizstart.html" class="btn btn-primary">START</a>
+                                            </div>
+                                                <a href="newquizadd.html" class="edit">
+                                                    <h6>Finish edit</h6> <i class="fas fa-feather-alt"></i>
+                                                </a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+                                <div class="card" >
+                                    <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <div class="end">
+                                            <div class="start">
+                                                <a href="quizstart.html" class="btn btn-primary">START</a>
+                                            </div>
+                                            <a href="newquizadd.html" class="edit"><h6>Finish edit</h6> <i class="fas fa-feather-alt"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-5 col-pad">
+                                <div class="card" >
+                                    <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <div class="end">
+                                            <div class="start">
+                                                <a href="quizstart.html" class="btn btn-primary">START</a>
+                                            </div>
+                                            <a href="newquizadd.html" class="edit"><h6>Finish edit</h6> <i class="fas fa-feather-alt"></i></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-pad">
+                                <div class="card" >
+                                    <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <div class="end">
+                                            <div class="start">
+                                                <a href="quizstart.html" class="btn btn-primary">START</a>
+                                            </div>
+                                            <a href="newquizadd.html" class="edit"><h6>Finish edit</h6> <i class="fas fa-feather-alt"></i></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sh-pagination sh-default-color">
+                            <ul class="page-numbers">
+                                <li>
+                                    <span class="page-numbers current">1</span>
                                 </li>
-                                <li class='navbar-item margin-right-for-navbar-li'>
-                                    <a class="nav-link" href="#">
-                                        <button type="button" class="btn btn-primary
-                                            btn_class">LOGIN</button>
-                                    </a>
+                                <li>
+                                    <a class="page-numbers" href="#">2</a>
                                 </li>
-                                <li class='navbar-item margin-right-for-navbar-li'>
-                                    <a class="nav-link" href="#">
-                                        <button type="button" class="btn
-                                            btn-secondary btn_class">SIGN UP</button>
-                                    </a>
+                                <li>
+                                    <a class="page-numbers" href="#">3</a>
+                                </li>
+                                <li>
+                                    <a class="next page-numbers" href="#">Next</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </nav>
-                <nav class="site-header sticky-top bg-secondary header_link"
-                    id='navbarResponsive'>
-                    <div class="container d-flex flex-column flex-md-row
-                        justify-content-between" id='navbarResponsive'>
-                        <a class="py-2 d-none d-md-inline-block" href="index.html">
-                            <i class="fas fa-home"></i>HOME
-                        </a>
-                        <a class="py-2 d-none d-md-inline-block" href="#">+ADD
-                            ARTICLE</a>
-                        <a class="py-2 d-none d-md-inline-block" href="#">USERS</a>
-                        <a class="py-2 d-none d-md-inline-block" href="#">CHAT</a>
-                        <a class="py-2 d-none d-md-inline-block" href="#">QUIZ</a>
-                    </div>
-                </nav>
-            </header>
-
-            <div class="header_mobile">
-                    <nav style='background-color: #0e1823' class="navbar navbar-dark">
-                        <div class="container">
-                            <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
-                            <button class="navbar-toggler" type="button"
-                                data-toggle="collapse" data-target="#navbarResponsiv">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class='collapse navbar-collapse' id='navbarResponsiv'>
-                                <ul class='navbar-nav ml-auto'>
-                                    <li class='navbar-item margin-right-for-navbar-li'>
-                                        <a class="nav-link" href="#">+ADD ARTICLE</a>
-                                    </li>
-                                    <li class='navbar-item margin-right-for-navbar-li'>
-                                        <a class="nav-link" href="#">USERS</a>
-                                    </li>
-                                    <li class='navbar-item margin-right-for-navbar-li'>
-                                        <a class="nav-link" href="#">CHAT</a>
-                                    </li>
-                                    <li class='navbar-item margin-right-for-navbar-li'>
-                                        <a class="nav-link" href="#">QUIZ</a>
-                                    </li>
-                                    <li class='navbar-item margin-right-for-navbar-li'>
-                                        <a class="nav-link" href="#">Login</a>
-                                    </li>
-                                    <li class='navbar-item'>
-                                        <a class="nav-link" href="#">Sign Up</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <nav  style="background-color:	#708090">
-                        <div class="container h-100" style="padding-top:
-                            5px;padding-bottom: 5px;">
-                            <div class="d-flex justify-content-center h-100">
-                                <div class="searchbar">
-                                    <input class="search_input" type="text" name=""
-                                        placeholder="Search...">
-                                    <a href="#" class="search_icon"><i class="fas
-                                            fa-search"></i></a>
+                    </main>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="row">
+                            <aside class="col-sm-6 col-md-12">
+                                <div class="categories-comment-like-item div_categories-comment-like categor_div">
+                                    <h3 class="categories-comment-like_title">Categories</h3>
+                                    <ul>
+                                        <li class="categor-comment-like_item">
+                                            <a href="#">WEB</a>
+                                        </li>
+                                        <li class="categor-comment-like_item">
+                                            <a href="#">IT</a>
+                                        </li>
+                                        <li class="categor-comment-like_item">
+                                            <a href="#">MAT</a>
+                                        </li>
+                                        <li class="categor-comment-like_item">
+                                            <a href="#">IT</a>
+                                        </li>
+                                        <li class="categor-comment-like_item">  
+                                            <a href="#">IT</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
+                                <a href="newquiz.html"><button type="button" class="btn btn-secondary">Create new quiz+</button></a>
+                            </aside>
                         </div>
-                    </nav>
+                    </div>      
                 </div>
-                <br>
-        <section class="col-xs-12">
-            <div class="container">
-                    <div class="row">
-                            <main class="col-md-8">
-                                <div class="row">
-                                      <div class="col-md-5 col-pad">
-                                              <div class="card" >
-                                                      <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
-                                                      <div class="card-body">
-                                                        <h5 class="card-title">Card title</h5>
-                                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                                        <a href="quizstart.html" class="btn btn-primary">START</a>
-                                                      </div>
-                                                    </div>
-                  
-                                        </div>
-                                        <div class="col-md-5 ">
-                                              <div class="card" >
-                                                      <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
-                                                      <div class="card-body">
-                                                        <h5 class="card-title">Card title</h5>
-                                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                                        <a href="quizstart.html" class="btn btn-primary">START</a>
-                                                      </div>
-                                                    </div>
-                  
-                                        </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                        <div class="col-md-5 col-pad">
-                                                <div class="card" >
-                                                        <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                          <h5 class="card-title">Card title</h5>
-                                                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                                          <a href="quizstart.html" class="btn btn-primary">START</a>
-                                                        </div>
-                                                      </div>
-                    
-                                          </div>
-                                          <div class="col-md-5 col-pad">
-                                                <div class="card" >
-                                                        <img src="images/Disinfecting-Quiz-30881050_m.jpg" class="card-img-top" alt="...">
-                                                        <div class="card-body">
-                                                          <h5 class="card-title">Card title</h5>
-                                                          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                                          <a href="quizstart.html" class="btn btn-primary">START</a>
-                                                        </div>
-                                                      </div>
-                    
-                                          </div>
-                                  </div>
-                                                   
-                                            
-                                  <div class="sh-pagination sh-default-color"><ul
-                                    class="page-numbers">
-                                    <li><span class="page-numbers current">1</span></li>
-                                    <li><a class="page-numbers" href="#">2</a></li>
-                                    <li><a class="page-numbers" href="#">3</a></li>
-                                    <li><a class="next page-numbers"
-                                            href="#">Next</a></li>
-                                </ul>
-                            </div>
-                          
-                            </main>
-                            
-                            <div class="col-md-4 col-lg-3">
-                              <div class="row">
-                                <aside class="col-sm-6 col-md-12">
-                                    
-                                        <div class="categories-comment-like-item
-                                        div_categories-comment-like categor_div">
-                                        
-                                        <h3
-                                            class="categories-comment-like_title">Categories</h3>
-                                        <ul>
-                                            <li class="categor-comment-like_item"><a
-                                                    href="#">WEB</a>
-                                            </li>
-                                            <li class="categor-comment-like_item"><a
-                                                    href="#">IT</a>
-                                            </li>
-                                            <li
-                                                class="categor-comment-like_item"><a
-                                                    href="#">MAT</a>
-                                            </li>
-                                            <li
-                                                class="categor-comment-like_item"><a
-                                                    href="#">IT</a>
-                                            </li>
-                                            <li
-                                                class="categor-comment-like_item"><a
-                                                    href="#">IT</a>
-                                            </li>
-                                        </ul>
-                                        
-                                        </div>
-                                        <button type="button" class="btn btn-secondary">Create new quiz+</button>
-                                </aside>
-                                
-                              </div>
-                            </div>      
-                          </div>
-
             </div>
-                
-              </section> 
-
-              <script>
-                    function openNav()
-                    {
-                        document.getElementById("mySidenav").style.width = "100%";
-                    }
-                    function closeNav()
-                    {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                    </script>
-
-</body>
+        </section> 
+        <hr>
+        <footer class="col-xs-12">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted text-center">Copyright © Your Website 2019</p>
+            </div>
+        </footer>
+        <script>
+            function openNav()
+            {
+                document.getElementById("mySidenav").style.width = "100%";
+            }   
+            function closeNav()
+            {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
 </html>

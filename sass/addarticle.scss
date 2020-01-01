@@ -1,3 +1,4 @@
+
 .header_link a {
     font-size: 18px;
     font-weight: 700;
@@ -8,11 +9,10 @@
 .header_link a:hover {
     color: LightGray;
 }
-
 .nav-link {
     .btn_class {
         width: 100px;
-        border-radius: 20px;    
+        border-radius: 20px;
     }
 }
 
@@ -47,6 +47,7 @@
     transition: width 0.4s linear;
 }
     
+
 .searchbar:hover  .search_icon{
     color: 	#696969;
     background: white;
@@ -78,45 +79,25 @@
     
 }
 
+
 .row{
-    display: block;
     justify-content: center;
     padding: 3rem;
     .card{
-        .card-title{
-            display: flex;
-            h3{
+        padding: 50px;
+        h2{
+            text-align: center;
+        }
+            small{
                 font-family: "Times New Roman", Times, serif;
 
             }
-        }
     }
 }
 
-.card-body{
-    h3{
-        font-family: "Times New Roman", Times, serif;
 
-    }
-}
-
-.fixed-top{
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-.down{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.list-inline-item a{
-    color: #353b48;
-}
-
-.list-inline-item a:hover  {
+ .list-inline-item a{
+    color: #353b48;}
+.list-inline-item a:hover {
     color: #007bff;
-}
+} 

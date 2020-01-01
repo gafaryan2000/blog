@@ -71,6 +71,16 @@
   .header_mobile {
     display: block; } }
 
+.question1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .question1 i {
+    padding: 5px; }
+
 .row {
   display: block;
   -webkit-box-pack: center;
@@ -84,25 +94,5 @@
     .row .card .card-title h3 {
       font-family: "Times New Roman", Times, serif; }
 
-.card-body h3 {
-  font-family: "Times New Roman", Times, serif; }
-
-.fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
-
-.down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.list-inline-item a {
-  color: #353b48; }
-
-.list-inline-item a:hover {
-  color: #007bff; }
+.pad {
+  padding: 20px; }
