@@ -8,6 +8,7 @@
 .header_link a:hover 
 {
     color: LightGray;
+    text-decoration: none;
 }
 
 .nav-link {
@@ -106,3 +107,11 @@
 .button{
       padding: 20px 0 0 0 ;
 }
+
+.list-inline-item a{
+    color: #353b48;
+}
+
+.list-inline-item a:hover  {
+color: #007bff;
+}    

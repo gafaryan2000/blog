@@ -5,6 +5,7 @@
   color: white; }
 
 .header_link a:hover {
+  text-decoration: none;
   color: LightGray; }
 
 .nav-link .btn_class {
