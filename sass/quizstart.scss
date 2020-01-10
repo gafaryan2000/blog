@@ -1,123 +1,16 @@
-.header_link a {
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-}
-
-.header_link a:hover {
-    text-decoration: none;
-    color: LightGray;
-}
-
-.nav-link {
-    .btn_class {
-        width: 100px;
-        border-radius: 20px;    
+body {
+    padding-top: 5em;
     }
-}
-
-.header_mobile {
-    display: none; 
-}
-
-.searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 50px;
-    background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
-}
-    
-.search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color: transparent;
-    line-height: 30px;
-    transition: width 0.4s linear;
-}
-
-.searchbar:hover  .search_input{
-    padding: 0 10px;
-    width: 300px;
-    max-width: 50%;
-    transition: width 0.4s linear;
-}
-    
-.searchbar:hover  .search_icon{
-    color: 	#696969;
-    background: white;
-}
-
-.search_icon{
-    height: 30px;
-    width: 30px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: white;
-}
-
-.header_mobile {
-    display: none  ;  
-}
-
-@media screen and (max-width: 768px) {
-    .header_md {
-        display: none
-    }
-    .header_mobile 
-    {
-        display: block
-    }
-    
-}
-
-.row{
-    display: block;
-    justify-content: center;
-    padding: 3rem;
-    .card{
-        .card-title{
+    .all{
+        display: flex;
+        justify-content:center;
+        h3{
+            text-align: center;
+        }
+        .but{
             display: flex;
-            h3{
-                font-family: "Times New Roman", Times, serif;
-
-            }
+            justify-content: center;
+            padding: 0 0 20px 0;
         }
     }
-}
-
-.card-body{
-    h3{
-        font-family: "Times New Roman", Times, serif;
-
-    }
-}
-
-.fixed-top{
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-.down{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.list-inline-item a{
-    color: #353b48;
-}
-
-.list-inline-item a:hover  {
-    color: #007bff;
-}
+   

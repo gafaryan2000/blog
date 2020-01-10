@@ -14,71 +14,54 @@
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link href="./css/login.css" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
             
     </head>
-    <body style="background:#f8f9fa!important">
+    <body>
         <div class="container">
-                <div class="row justify-content-center">
-                        <div class="col-md-8">
-                                <h3 class="loginwith">Login</h3>
-        
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 log_col">
-                                    <label class="log_text">Username</label>
-                                    <input type="text" class="form-control log_inp" placeholder="Username">
-                               
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 log_col">
-                                    <label class="log_text">Password</label>
-                                    <input type="password" class="form-control log_inp" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-4 login_btn">
-                                    <a href="#">LOGIN</a>
-                                </div>
-                            </div>
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Sign In</h3>
+                        <div class="d-flex justify-content-end social_icon">
+                            <span class="icon-fb"><i class="fab fa-facebook-square"></i></span>
+                            <span class="icon-goog"><i class="fab fa-google-plus-square"></i></span>
+                            <span class="icon-twit"><i class="fab fa-twitter-square"></i></span>
                         </div>
                     </div>
-                <div class="row justify-content-center">
-                        <div class="col-md-8">
-                                <h3 class="loginwith">Login with<br>social network</h3>
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 log_gm_soc">
-                                    <a href="#">Login with Gmail</a>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
+                                <input type="text" class="form-control" placeholder="username">
+                                
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 log_fb_soc">
-                                    <a href="#">Log in with Facebook</a>
-                                </div> 
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="password">
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-6 log_tw_soc">
-                                    <a href="#">Log in with Twitter</a>
-                                </div> 
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Remember Me
                             </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn float-right login_btn">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            Don't have an account?<a href="#">Sign Up</a>
                         </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="#">Forgot your password?</a>
+                        </div>
+                    </div>
                 </div>
-                 <div class="row justify-content-center">
-                    <div class="col-md-8 now_reg">
-                        <div class="row justify-content-center">
-                            <div class="col-md-4">
-                                <p class="text">Don' have an account?</p>
-                                <a href="sign_up.html">Sign up now</a>
-                            </div>
-                        </div>        
-                        <div class="row justify-content-center">
-                            <div class="col-md-4">
-                                <p class="text">Forgot password?</p>
-                                <a href="reset.html">Reset password now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>           
-        </div>
-        
+            </div>
     </body>
 </html>

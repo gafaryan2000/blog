@@ -1,109 +1,20 @@
-.header_link a {
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  color: white; }
+body {
+  padding-top: 5em; }
 
-.header_link a:hover {
-  text-decoration: none;
-  color: LightGray; }
-
-.nav-link .btn_class {
-  width: 100px;
-  border-radius: 20px; }
-
-.header_mobile {
-  display: none; }
-
-.searchbar {
-  margin-bottom: auto;
-  margin-top: auto;
-  height: 50px;
-  background-color: #353b48;
-  border-radius: 30px;
-  padding: 10px; }
-
-.search_input {
-  color: white;
-  border: 0;
-  outline: 0;
-  background: none;
-  width: 0;
-  caret-color: transparent;
-  line-height: 30px;
-  -webkit-transition: width 0.4s linear;
-  -o-transition: width 0.4s linear;
-  transition: width 0.4s linear; }
-
-.searchbar:hover .search_input {
-  padding: 0 10px;
-  width: 300px;
-  max-width: 50%;
-  -webkit-transition: width 0.4s linear;
-  -o-transition: width 0.4s linear;
-  transition: width 0.4s linear; }
-
-.searchbar:hover .search_icon {
-  color: #696969;
-  background: white; }
-
-.search_icon {
-  height: 30px;
-  width: 30px;
-  float: right;
+.all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50%;
-  color: white; }
-
-.header_mobile {
-  display: none; }
-
-@media screen and (max-width: 768px) {
-  .header_md {
-    display: none; }
-  .header_mobile {
-    display: block; } }
-
-.row {
-  display: block;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 3rem; }
-  .row .card .card-title {
+  justify-content: center; }
+  .all h3 {
+    text-align: center; }
+  .all .but {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    .row .card .card-title h3 {
-      font-family: "Times New Roman", Times, serif; }
-
-.card-body h3 {
-  font-family: "Times New Roman", Times, serif; }
-
-.fixed-top {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
-
-.down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.list-inline-item a {
-  color: #353b48; }
-
-.list-inline-item a:hover {
-  color: #007bff; }
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 0 20px 0; }
