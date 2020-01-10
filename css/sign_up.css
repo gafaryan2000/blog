@@ -1,51 +1,30 @@
-.regist_row {
-  padding-top: 50px; }
+html, body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: "Numans", sans-serif; }
 
-h3 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
-  padding-bottom: 30px;
-  color: #353b48; }
+.container {
+  height: 100%;
+  align-content: center; }
 
-.registr_col {
-  height: 100px; }
+.card {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px; }
 
-.regist_inp {
-  height: 50px;
-  border-radius: 25px;
-  border: 2px solid silver; }
+.btn-reg {
+  background: #32508E;
+  color: white; }
 
-.regist_text {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
-  color: #353b48; }
-
-.registr_check {
-  height: 50px;
-  font-weight: 700;
-  color: #353b48;
-  font-family: "Times New Roman", Times, serif; }
-
-.btn_signup {
-  align-items: center;
+.form-check {
   padding-top: 10px;
-  height: 50px;
-  border: 2px solid silver;
-  border-radius: 25px;
-  text-align: center;
-  background: #353b48; }
-  .btn_signup a {
-    text-decoration: none;
-    font-weight: 700;
-    color: silver; }
+  padding-bottom: 10px; }
 
-.btn_signup:hover {
-  background: #007bff; }
+.btn-group {
+  margin-bottom: 10px; }
 
-#example-getting-started {
-  border-bottom: 1px solid silver; }
-
-.checkbox {
-  padding-left: 0px; }
+.card-header h3 {
+  color: black; }
 
 /*# sourceMappingURL=sign_up.css.map */

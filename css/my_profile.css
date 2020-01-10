@@ -234,9 +234,12 @@ ul.page-numbers a, ul.page-numbers span {
 .card-title {
   font-size: 20px; }
 
+.my_icon {
+  padding-right: 5px; }
+
 .icon_frend {
   color: black;
-  background: #32CD32;
+  background: #28a745;
   border-radius: 50%;
   font-size: 30px;
   padding-right: 40px;

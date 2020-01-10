@@ -7,7 +7,6 @@
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             rel="stylesheet">
-        <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <script
@@ -17,12 +16,16 @@
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link href="./css/style.css" rel="stylesheet">
-
+        <link type="text/css" rel="stylesheet" href="css/hover-box.css">
+        <link type="image/ico" rel="shortcut icon" href="favicon.png">	
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+            <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+            <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
     </head>
     <body>
         <header class="header_md">
+            
             <nav style='background-color: #0e1823' class="navbar
                 navbar-expand-md navbar-dark">
                 <div class="container">
@@ -45,21 +48,160 @@
                                 </div>
                             </li>
                             <li class='navbar-item margin-right-for-navbar-li'>
-                                <a class="nav-link" href="login.html">
+                                <a class="nav-link" >
                                     <button type="button" class="btn btn-primary
-                                        btn_class">LOGIN </button>
+                                        btn_class" data-toggle="modal" data-target="#exampleModalCenter">LOGIN </button>
                                 </a>
                             </li>
                             <li class='navbar-item margin-right-for-navbar-li'>
-                                <a class="nav-link" href="sign_up.html">
+                                <a class="nav-link" >
                                     <button type="button" class="btn
-                                        btn-secondary btn_class" >SIGN UP </button>
+                                        btn-secondary btn_class"data-toggle="modal" data-target="#exampleModalEnd" >SIGN UP </button>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                    <div class="container">
+                        <div class="d-flex justify-content-center h-100">
+                            <div class="card-card">
+                                <div class="card-header">
+                                    <h3>Sign In</h3>
+                                    <div class="d-flex justify-content-end social_icon">
+                                        <span class="icon-fb"><i class="fab fa-facebook-square"></i></span>
+                                        <span class="icon-goog"><i class="fab fa-google-plus-square"></i></span>
+                                        <span class="icon-twit"><i class="fab fa-twitter-square"></i></span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                            
+                                        </div>
+                                        <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="row align-items-center remember">
+                                            <input type="checkbox">Remember Me
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Login" class="btn float-right login_btn">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-center links">
+                                        Don't have an account?<a href="#">Sign Up</a>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="exampleModalEnd" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="container">
+                            <div class="sign-up d-flex justify-content-center h-100">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Sign Up</h3>
+                                      
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                                
+                                            </div>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                                
+                                            </div>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Username">
+                                                
+                                            </div>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Email">
+                                                
+                                            </div>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                </div>
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                            <div class="input-group form-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                </div>
+                                                <input type="password" class="form-control" placeholder="Confirm Password">
+                                            </div>
+                                           
+                                        </form>
+                                    </div>
+                                    <div class="card-footer">
+                                                        <h4>Preference</h4>
+                                                        <select id="example-getting-started" multiple="multiple" >
+                                                                <span class="multiselect-selected-text">Choose your country</span>
+                                                            <option value="cheese">Asdfghj</option>
+                                                            <option value="tomatoes">Asdfghj</option>
+                                                            <option value="mozarella">Asdfghj</option>
+                                                            <option value="pepperoni">Asdfghj</option>
+                                                            <option value="onions">Asdfghj</option>
+                                                        </select>
+                                                <div class="custom-file" id="customFile" lang="es">
+                                                        <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                                        <label class="custom-file-label" for="exampleInputFile">
+                                                           Select file...
+                                                        </label>
+                                                    <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" >
+                                                            <label class="form-check-label ">Is subcscribed to the newsletter</label>
+                                                          </div>
+                                                          <div>
+                                                            <a href="#" class="btn  btn-block btn-reg "role="button" > Sign Up </a>
+                                                          </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
             <nav class="site-header sticky-top bg-secondary header_link"
                 id='navbarResponsive ' >
                 <div class="container d-flex flex-column flex-md-row
@@ -69,7 +211,7 @@
                     </a>
                     <a class="py-2 d-none d-md-inline-block" href="#">+ADD
                         ARTICLE</a>
-                    <a class="py-2 d-none d-md-inline-block" href="#">USERS</a>
+                    <a class="py-2 d-none d-md-inline-block" href="users.html">USERS</a>
                     <a class="py-2 d-none d-md-inline-block" href="#">CHAT</a>
                     <a class="py-2 d-none d-md-inline-block" href="quiz.html">QUIZ</a>
                 </div>
@@ -79,6 +221,13 @@
             <nav style='background-color: #0e1823' class="navbar navbar-dark" >
                 <div class="container">
                     <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                    <div>
+                        <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#navbarSearch">
+                        <i class="fas
+                        fa-search" style="color: white;"></i>
+                        </button>
+                    </div>
                     <button class="navbar-toggler" type="button"
                         data-toggle="collapse" data-target="#navbarResponsiv">
                         <span class="navbar-toggler-icon"></span>
@@ -98,7 +247,7 @@
                                 <a class="nav-link" href="#">QUIZ</a>
                             </li>
                             <li class='navbar-item margin-right-for-navbar-li'>
-                                <a class="nav-link" href="login.html">Login</a>
+                                <a class="nav-link" href="login.html" >Login</a>
                             </li>
                             <li class='navbar-item'>
                                 <a class="nav-link" href="sign_up.html">Sign Up</a>
@@ -107,19 +256,11 @@
                     </div>
                 </div>
             </nav>
-            <nav  style="background-color:	#708090">
-                <div class="container h-100" style="padding-top:
-                    5px;padding-bottom: 5px;">
-                    <div class="d-flex justify-content-center h-100">
-                        <div class="searchbar">
-                            <input class="search_input" type="text" name=""
-                                placeholder="Search...">
-                            <a href="#" class="search_icon"><i class="fas
-                                    fa-search"></i></a>
-                        </div>
-                    </div>
+            <div class='collapse ' id="navbarSearch"> 
+                  <div class="search__container">
+                    <input class="search__input" type="text" placeholder="Search" id="exampleInputName">
                 </div>
-            </nav>
+            </div>
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -132,12 +273,26 @@
             <p class="categor_mob"> <i class="fas fa-grip-horizontal"></i>Categories</p>
         </span>
 
-        <section class="bg0 content ">
+        <section id="bg0" class="content">
             <div class="container">
                 <div class="row m-rl--1">
-                    <div class="col-md-6 p-rl-1 p-b-2">
-                        <div class="bg-img1 size-a-3 how1 pos-relative"
+                    <div class="col-md-6 p-rl-1 p-b-2 hvrbox">
+                        <div class="bg-img1 size-a-3 how1 "
                             style="background-image: url(./images/latest-05.jpg);">
+
+                           
+                            
+                                <!-- <div class="hvrbox-layer_top ">
+                                    <div class="hvrbox-text">
+                                            <p class="post-meta">
+                                                Posted by
+                                                    <a href="users_profile.html">admin</a>
+                                                   
+                                                    on March 3, 2019, 4:55 p.m.
+                                                </p>
+                                    </div>
+                                </div> -->
+                            
                         
                             <a href="article_detail.html" class="dis-block how1-child1 trans-03"></a>
                             <div class="flex-col-e-s s-full p-rl-25 p-tb-24">
@@ -148,13 +303,28 @@
                                         adipiscing elit.
                                     </a>
                                 </h3>
-                                <a href="#" class="dis-block how1-child2 f1-s-2
-                                    cl0 bo-all-1 bocl0 hov-btn1 trans-03 p-rl-5
-                                    p-t-2">
-                                    Admin - Jun 03
-                                </a>
+                               
                             </div>
                         </div>
+                        <!-- <div class="hoverable_block">
+                            <div class="price_new">
+                                <p class="post-meta">
+                                    Posted by
+                                        <a href="users_profile.html">admin</a>
+                                       
+                                        on March 3, 2019, 4:55 p.m.
+                                    </p>
+                            </div>
+                          
+                            <div class="product_desc">gvhgvghvg vggvgv hvghvhvh h vhvgv hvhgvgh</div>
+                            <div class="text-right">
+                                <a href="#" class="product_link">
+                                    <span class="inline_middle">
+                                    </span>
+                                   
+                                </a>
+                            </div>
+                        </div> -->
                      
                     </div>
 
@@ -174,11 +344,7 @@
                                                 consectetur adipiscing elit.
                                             </a>
                                         </h3>
-                                        <a href="#" class="dis-block how1-child2
-                                            f1-s-2 cl0 bo-all-1 bocl0 hov-btn1
-                                            p-rl-5 p-t-2">
-                                            Admin - Jun 03
-                                        </a>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -196,11 +362,7 @@
                                                 consectetur adipiscing elit.
                                             </a>
                                         </h3>
-                                        <a href="#" class="dis-block how1-child2
-                                            f1-s-2 cl0 bo-all-1 bocl0 hov-btn1
-                                            p-rl-5 p-t-2">
-                                            Admin - Jun 03
-                                        </a>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -218,11 +380,7 @@
                                                 consectetur adipiscing elit.
                                             </a>
                                         </h3>
-                                        <a href="#" class="dis-block how1-child2
-                                            f1-s-2 cl0 bo-all-1 bocl0 hov-btn1
-                                            p-rl-5 p-t-2">
-                                            Admin - Jun 03
-                                        </a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -242,10 +400,21 @@
                                     <div class="row no-gutters">
                                         <div class="col-md-6">
                                             <div class="img-hover-zoom">
-                                                <a href="article_detail.html">
-                                                <img src="./images/post_14.jpg"
-                                                class="card-img" alt="...">
-                                            </a>
+                                                <a href="article_detail.html"></a>
+                                                        <div class="hvrbox">
+                                                                <img src="./images/post_14.jpg" alt="" class="card-img hvrbox-layer_bottom">
+                                                            
+                                                                <div class="hvrbox-layer_top ">
+                                                                    <div class="hvrbox-text">
+                                                                            <p class="post-meta">
+                                                                                Posted by
+                                                                                    <a href="users_profile.html">admin</a>
+                                                                                    <wbr>
+                                                                                    on March 3, 2019, 4:55 p.m.
+                                                                                </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                             </div>
                                             
                                         </div>
@@ -263,9 +432,7 @@
                                                         a little bit longer
                                                         jdhfjwsfh kwfjkwefn .</a>
                                                 </p>
-                                                <p class="post-meta">Posted by
-                                                        <a href="users_profile.html">admin</a>
-                                                        on March 3, 2019, 4:55 p.m.</p>
+                                        
                                                 <p class="card_text"><small
                                                         class="text-muted">
                                                         <i class="fas fa-tags"></i>Tags:
@@ -279,10 +446,22 @@
                                     <div class="row no-gutters">
                                         <div class="col-md-6">
                                                 <div class="img-hover-zoom">
-                                                        <a href="article_detail.html">
-                                            <img src="./images/post_18.jpg"
-                                                class="card-img" alt="...">
-                                                </a>
+                                                        <a href="article_detail.html"> </a>
+                                          
+                                                <div class="hvrbox">
+                                                    <img src="./images/post_18.jpg" alt="" class="card-img hvrbox-layer_bottom">
+                                                
+                                                    <div class="hvrbox-layer_top ">
+                                                        <div class="hvrbox-text">
+                                                                <p class="post-meta">
+                                                                    Posted by
+                                                                        <a href="users_profile.html">admin</a>
+                                                                        on March 3, 2019, 4:55 p.m.
+                                                                    </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
                                                 </div>
                                         </div>
                                         <div class="col-md-6">
@@ -299,9 +478,7 @@
                                                         a little bit longer
                                                         jdhfjwsfh kwfjkwefn .</a>
                                                 </p>
-                                                <p class="post-meta">Posted by
-                                                        <a href="users_profile.html">admin</a>
-                                                        on March 3, 2019, 4:55 p.m.</p>
+                                               
                                                 <p class="card_text"><small
                                                         class="text-muted">
                                                         <i class="fas fa-tags"></i>Tags:
@@ -317,9 +494,21 @@
                                                
                                                 <div class="img-hover-zoom">
                                                     <a href="article_detail.html">
-                                            <img src="./images/post_16.jpg"
-                                                class="card-img" alt="...">
                                                 </a>
+                                                <div class="hvrbox">
+                                                    <img src="./images/post_16.jpg" alt="" class="card-img hvrbox-layer_bottom">
+                                                
+                                                    <div class="hvrbox-layer_top ">
+                                                        <div class="hvrbox-text">
+                                                                <p class="post-meta">
+                                                                    Posted by
+                                                                        <a href="users_profile.html">admin</a>
+                                                                        on March 3, 2019, 4:55 p.m.
+                                                                    </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
                                                 </div>
                                         </div>
                                         <div class="col-md-6">
@@ -336,9 +525,7 @@
                                                         a little bit longer
                                                         jdhfjwsfh kwfjkwefn .</a>
                                                 </p>
-                                                <p class="post-meta">Posted by
-                                                        <a href="users_profile.html">admin</a>
-                                                        on March 3, 2019, 4:55 p.m.</p>
+                                                
                                                 <p class="card_text"><small
                                                         class="text-muted">
                                                         <i class="fas fa-tags"></i>Tags:
@@ -353,9 +540,20 @@
                                         <div class="col-md-6">
                                                 <div class="img-hover-zoom">
                                                         <a href="article_detail.html">
-                                            <img src="./images/post_22.jpg"
-                                                class="card-img" alt="...">
                                                         </a>
+                                                        <div class="hvrbox">
+                                                            <img src="./images/post_22.jpg" alt="" class="card-img hvrbox-layer_bottom">
+                                                        
+                                                            <div class="hvrbox-layer_top ">
+                                                                <div class="hvrbox-text">
+                                                                        <p class="post-meta">
+                                                                            Posted by
+                                                                                <a href="users_profile.html">admin</a>
+                                                                                on March 3, 2019, 4:55 p.m.
+                                                                            </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                         </div>
                                         <div class="col-md-6">
@@ -372,9 +570,7 @@
                                                         a little bit longer
                                                         jdhfjwsfh kwfjkwefn .</a>
                                                 </p>
-                                                <p class="post-meta">Posted by
-                                                        <a href="users_profile.html">admin</a>
-                                                        on March 3, 2019, 4:55 p.m.</p>
+                                               
                                                 <p class="card_text"><small
                                                         class="text-muted">
                                                         <i class="fas fa-tags"></i>Tags:
@@ -532,14 +728,22 @@
 
 var header = document.getElementById("navbarResponsive ");
 var sticky = header.offsetTop;
-
+var sectionB = document.getElementById("bg0");
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    console.log(sectionB.style.marginTop)
+    sectionB.style.marginTop = sticky + 'px'
+    console.log(sectionB.style.marginTop)
+    
   } else {
     header.classList.remove("sticky");
+    sectionB.style.marginTop = 30 + 'px'
   }
 }
+$(document).ready(function() {
+        $('#example-getting-started').multiselect();
+    });
 
                 </script>
         </body>
