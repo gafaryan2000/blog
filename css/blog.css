@@ -3,7 +3,7 @@
 .blog-card {
   display: flex;
   flex-direction: column;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.6%;
   background: #fff;
@@ -99,6 +99,7 @@
     .blog-card {
       flex-direction: row;
       height: auto;
+      width: 700px;
       max-width: 700px; }
       .blog-card .meta {
         flex-basis: 40%;
