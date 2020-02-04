@@ -130,120 +130,17 @@ input {
   .header_mobile {
     display: block; } }
 
-.end {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .end .edit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 10px;
-    color: black; }
-    .end .edit i {
-      padding: 0 0 0 5px; }
-  .end a:hover {
-    text-decoration: none; }
-
-.div_categories-comment-like ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 0; }
-
-.categories-comment-like_title {
-  color: #505050; }
-
-.categories-comment-like-item {
-  padding-bottom: 45px; }
-
-.div_categories-comment-like li {
-  font-size: 13px; }
-
-.categor-comment-like_item a:hover {
-  color: #007bff;
-  text-decoration: none; }
-
-.cat_count {
-  float: right;
-  font-weight: 700;
-  background-color: #f3f3f3;
-  color: #9a9a9a;
-  border-radius: 50px;
-  padding: 0 8px; }
-
-.categor-comment-like_item {
-  padding-bottom: 15px;
-  padding-top: 5px;
-  border-bottom: 1px solid #e3e3e3;
-  font-size: 15px; }
-
-.categor-comment-like_item a {
-  text-decoration: none;
-  color: #888;
-  font-weight: 500; }
-
-.col-pad {
-  padding-bottom: 25px; }
-
-ul.page-numbers {
-  display: table;
-  list-style: none;
-  background-color: #f4f4f4;
-  padding: 5px 4px;
-  border-radius: 30px;
-  border-width: 0; }
-  ul.page-numbers li {
-    display: block;
-    float: left;
-    margin: 0 2px;
-    text-align: center; }
-
-ul.page-numbers .current {
-  color: #fff;
-  background-color: #353b48;
-  border-radius: 30px; }
-
-ul.page-numbers .current:hover {
-  background-color: #007bff; }
-
-ul.page-numbers a {
-  text-decoration: none;
-  color: #353b48; }
-
-ul.page-numbers a:hover {
-  color: #007bff; }
-
-ul.page-numbers .current {
-  font-weight: 700; }
-
-ul.page-numbers a, ul.page-numbers span {
-  display: block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-weight: 400;
-  cursor: pointer;
-  padding: 0; }
-
-.sh-pagination {
-  padding-bottom: 20px; }
-
-.list-inline-item a {
-  color: #353b48; }
-
-.list-inline-item a:hover {
-  color: #007bff; }
-
-.content {
-  padding: 16px; }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
-.sticky + .content {
-  padding-top: 102px; }
+.row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 3rem; }
+  .row .card {
+    padding: 50px; }
+    .row .card h2 {
+      text-align: center; }
+    .row .card small {
+      font-family: "Times New Roman", Times, serif; }
 
 .list-inline-item a {
   color: #353b48; }

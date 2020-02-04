@@ -1,0 +1,12 @@
+body {
+  background-color: #F1F3FA; }
+
+.loading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: calc(50%);
+  position: absolute;
+  height: 50px; }
+
+/*# sourceMappingURL=reset_pass_3.css.map */

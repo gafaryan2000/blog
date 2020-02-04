@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,gBAAgB,EAAE,OAAO;;AAC7B,QAAQ;EACJ,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,CAAC;EACR,MAAM,EAAE,IAAI;EACZ,GAAG,EAAE,SAAS;EACd,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI",
+"sources": ["../sass/reset_pass_3.sass"],
+"names": [],
+"file": "reset_pass_3.css"
+}
