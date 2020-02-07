@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/edit.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+    <header class="header_md">
+        <nav style='background-color: #0e1823' class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                <div class='collapse navbar-collapse'>
+                    <ul class='navbar-nav ml-auto'>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <div class="container h-100">
+                                <div class="d-flex justify-content-centerh-100">
+                                    <div class="searchbar">
+                                        <input class="search_input" type="text" name="" placeholder="Search...">
+                                            <a href="#" class="search_icon">
+                                                <i class="fas fa-search"></i>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-primary btn_class">LOGIN</button>
+                            </a>
+                        </li>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-secondary btn_class">SIGN UP</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="site-header sticky-top bg-secondary header_link" id='navbarResponsive'>
+            <div class="container d-flex flex-column flex-md-row justify-content-between" id='navbarResponsive'>
+                <a class="py-2 d-none d-md-inline-block" href="index.html">
+                    <i class="fas fa-home"></i>HOME
+                </a>
+                <a class="py-2 d-none d-md-inline-block" href="addarticle.html">+ADD ARTICLE</a>
+                <a class="py-2 d-none d-md-inline-block" href="#">USERS</a>
+                <a class="py-2 d-none d-md-inline-block" href="#">CHAT</a>
+                <a class="py-2 d-none d-md-inline-block" href="quiz.html">QUIZ</a>
+            </div>
+        </nav>
+    </header>
+    <div class="header_mobile">
+        <nav style='background-color: #0e1823' class="navbar navbar-dark">
+            <div class="container">
+                <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiv">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class='collapse navbar-collapse' id='navbarResponsiv'>
+                    <ul class='navbar-nav ml-auto'>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="addarticle.html">+ADD ARTICLE</a>
+                        </li>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="#">USERS</a>
+                        </li>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="#">CHAT</a>
+                        </li>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="quiz.html">QUIZ</a>
+                        </li>
+                        <li class='navbar-item margin-right-for-navbar-li'>
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class='navbar-item'>
+                            <a class="nav-link" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav  style="background-color:	#708090">
+            <div class="container h-100" style="padding-top:5px;padding-bottom: 5px;">
+                <div class="d-flex justify-content-center h-100">
+                    <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div><hr>
+    <div class="container cont" style="background: #353b48;;">
+            <div style="text-align: center; display: contents; justify-content: center;">               
+                <div class="quessionedit">
+                    <div class="heading">  
+                        <h4 style="color: aliceblue;">Edit Quession</h4> 
+                    </div>
+                    <div class="body" style="padding-bottom: 25px;">
+                        <div class="input-group card" style="margin-bottom: 50px;background: rgb(219, 219, 219);">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Quession">
+                              </div>
+                        </div>
+                                    <div class="choos" style=" color: aliceblue;background: #353b48;">
+                                        <h4>
+                                           Choose the correct answer</h4>
+                                    </div>
+                            <div class="card" style="justify-content: center; display: block;background: rgb(219, 219, 219);">
+                               
+                                    <div class="checkb"> 
+                                   <div class="check">   
+                                    <label class="label">
+                                      <input  class="label__checkbox" type="checkbox" />
+                                      <span class="label__text">
+                                        <span class="label__check">
+                                          <i class="fa fa-check icon"></i>
+                                        </span>
+                                      </span>
+                                    </label>
+                                    <div class="text"><input type="text" class="form-control"  placeholder="Answer"></div>
+                                </div>
+                                <div class="check">   
+                                    <label class="label">
+                                      <input  class="label__checkbox" type="checkbox" />
+                                      <span class="label__text">
+                                        <span class="label__check">
+                                          <i class="fa fa-check icon"></i>
+                                        </span>
+                                      </span>
+                                    </label>
+                                    <div class="text"><input type="text" class="form-control"  placeholder="Answer"></div>
+                                </div>
+                                <div class="check">   
+                                    <label class="label">
+                                      <input  class="label__checkbox" type="checkbox" />
+                                      <span class="label__text">
+                                        <span class="label__check">
+                                          <i class="fa fa-check icon"></i>
+                                        </span>
+                                      </span>
+                                    </label>
+                                    <div class="text"><input type="text" class="form-control"  placeholder="Answer"></div>
+                                </div>
+
+                                </div>
+                            </div>
+                                <div class="card" style="margin-top: 50px;background: rgb(219, 219, 219);">
+                                    <button class="btn btn-secondary">Save Quession <i class="fa fa-floppy-o"></i></button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div><hr>
+     <footer class="col-xs-12" style="padding: 20px 0 20px 0;">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright text-muted text-center">Copyright © Your Website 2019</p>
+        </div>
+    </footer>
+</body>
+
+</html>

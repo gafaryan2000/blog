@@ -115,38 +115,33 @@
     .header_mobile {
         display: block}
     }
-.row{
-    display: block;
-    justify-content: center;
-    padding: 3rem;
-    .card{
-        h3{
-            text-align: center;
-        }
-            small{
-                font-family: "Times New Roman", Times, serif;
+.file{
+    display: none;
+}
 
-            }
+.body{
+padding: 1rem;
+}
+@media screen and(max-width:770px){
+    .body{
+        padding: 190px 0 0 0;
     }
 }
-
-.col-sm-6{
-    width: 100%;
+h6{
+    text-align: center;
+    font-size: 1.5rem;
+}
+h4{
+    text-align: center;
+    color: aliceblue;
 }
 
-.file {
-    visibility: hidden;
-    position: absolute;
-}
-
-.button{
-      padding: 20px 0 0 0 ;
+.input-grup{
+    display: block;
 }
 
 .list-inline-item a{
-    color: #353b48;
-}
-
-.list-inline-item a:hover  {
-color: #007bff;
-}    
+    color: #353b48;}
+.list-inline-item a:hover {
+    color: #007bff;
+} 
