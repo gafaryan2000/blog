@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article</title>
+        <link rel="stylesheet" href="css/articlem.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet"> 
+        
+    </head>
+    <body>
+        <header class="header_md">
+            <nav style='background-color: #0e1823' class="navbar navbar-expand-md navbar-dark">
+                <div class="container">
+                    <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                    <div class='collapse navbar-collapse'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <div class="container h-100">
+                                    <div class="d-flex justify-content-centerh-100">
+                                        <div class="searchbar">
+                                            <input class="search_input" type="text" name="" placeholder="Search...">
+                                                <a href="#" class="search_icon">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn btn-primary btn_class">LOGIN</button>
+                                </a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">
+                                    <button type="button" class="btn btn-secondary btn_class">SIGN UP</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="site-header sticky-top bg-secondary header_link" id='navbarResponsive'>
+                <div class="container d-flex flex-column flex-md-row justify-content-between" id='navbarResponsive'>
+                    <a class="py-2 d-none d-md-inline-block" href="index.html">
+                        <i class="fas fa-home"></i>HOME
+                    </a>
+                    <a class="py-2 d-none d-md-inline-block" href="addarticle.html">+ADD ARTICLE</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">USERS</a>
+                    <a class="py-2 d-none d-md-inline-block" href="#">CHAT</a>
+                    <a class="py-2 d-none d-md-inline-block" href="quiz.html">QUIZ</a>
+                </div>
+            </nav>
+        </header>
+        <div class="header_mobile">
+            <nav style='background-color: #0e1823' class="navbar navbar-dark">
+                <div class="container">
+                    <a class='navbar-brand ' href="#"><h3>LOGO</h3></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiv">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class='collapse navbar-collapse' id='navbarResponsiv'>
+                        <ul class='navbar-nav ml-auto'>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="addarticle.html">+ADD ARTICLE</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">USERS</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">CHAT</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="quiz.html">QUIZ</a>
+                            </li>
+                            <li class='navbar-item margin-right-for-navbar-li'>
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class='navbar-item'>
+                                <a class="nav-link" href="#">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav  style="background-color:	#708090">
+                <div class="container h-100" style="padding-top:5px;padding-bottom: 5px;">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="searchbar">
+                            <input class="search_input" type="text" name="" placeholder="Search...">
+                                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="all">
+            <div class="col-md-1"></div>
+            <div class="top">
+                <div class="col-md-11 col-sm-10 col-11 article" >
+                    <h3>Changed with rest api Hello 2</h3>
+                    <small>
+                        <div class="time">
+                            <i class="fa fa-clock"></i>23:00, 
+                            23.03.2020
+                        </div>
+                        <div id="category">
+                           Category: Information Technologies
+                        </div>
+                    </small>
+                    <img src="images/ThinkstockPhotos-823686906.jpg" alt="">
+                    <p>
+                        Язык гипертекстовой разметки HTML был разработан британским учёным Тимом Бернерсом-Ли приблизительно в 1986—1991 годах в стенах ЦЕРНа в Женеве в Швейцарии[3]. HTML создавался как язык для обмена научной и технической документацией, пригодный для использования людьми, не являющимися специалистами в области вёрстки. HTML успешно справлялся с проблемой сложности SGML путём определения небольшого набора структурных и семантических элементов — дескрипторов. Дескрипторы также часто называют «тегами». С помощью HTML можно легко создать относительно простой, но красиво оформленный документ. Помимо упрощения структуры документа, в HTML внесена поддержка гипертекста. Мультимедийные возможности были добавлены позже. Первым общедоступным описанием HTML был документ «Теги HTML», впервые упомянутый в Интернете Тимом Бернерсом-Ли в конце 1991 года,[4][5]. В нём описываются 18 элементов, составляющих первоначальный, относительно простой дизайн HTML. За исключением тега гиперссылки, на них сильно повлиял SGMLguid, внутренний формат документации, основанный на стандартном обобщенном языке разметки (SGML), в CERN. Одиннадцать из этих элементов всё ещё существуют в HTML 4[6]. Изначально язык HTML был задуман и создан как средство структурирования и форматирования документов без их привязки к средствам воспроизведения (отображения). В идеале, текст с разметкой HTML должен был без стилистических и структурных искажений воспроизводиться на оборудовании с различной технической оснащённостью (цветной экран современного компьютера, монохромный экран органайзера, ограниченный по размерам экран мобильного телефона или устройства и программы голосового воспроизведения текстов). Однако современное применение HTML очень далеко от его изначальной задачи. Например, тег
+                        предназначен для создания в документах таблиц, но иногда используется и для оформления размещения элементов на странице. С течением времени основная идея платформонезависимости языка HTML была принесена в жертву современным потребностям в мультимедийном и графическом оформлении.
+                    </p>
+                    <div class="box">
+                        <div class="box1">
+                            <a href="#"><i class="far fa-thumbs-up"></i></a>
+                        </div>
+                        <div class="box1">
+                            <a href="#"><i class="far fa-bookmark"></i></a>
+                        </div>
+                        <div class="box2">
+                            <a href="#"><i class="fas fa-edit"></i></a>
+                        </div>
+                        <div class="box3">
+                            <a href="#"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex">
+                    <div class="col-md-12" style="margin-top: 20px;">
+                        <h4>Comments : 2</h4>
+                        <form >
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button class="btn btn-primary">
+                                Post
+                            </button>
+                        </form>
+                        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="media g-mb-30 media-comment">
+                                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Image Description">
+                                    <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+                                        <div class="g-mb-15">
+                                            <h5 class="h5 g-color-gray-dark-v1 mb-0">John Doe</h5>
+                                            <span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+                                        </div>
+                                        <p>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+                                            felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                        </p>
+                                        <ul class="list-inline d-sm-flex my-0">
+                                            <li class="list-inline-item g-mr-20">
+                                                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                                    <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+                                                     178
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="media g-mb-30 media-comment">
+                                    <img class="d-flex g-width-50 g-height-50 rounded-circle g-mt-3 g-mr-15" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Image Description">
+                                    <div class="media-body u-shadow-v18 g-bg-secondary g-pa-30">
+                                        <div class="g-mb-15">
+                                            <h5 class="h5 g-color-gray-dark-v1 mb-0">John Doe</h5>
+                                            <span class="g-color-gray-dark-v4 g-font-size-12">5 days ago</span>
+                                        </div>
+                                        <p> 
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue
+                                            felis in faucibus ras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                        </p>
+                                        <ul class="list-inline d-sm-flex my-0">
+                                            <li class="list-inline-item g-mr-20">
+                                                <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
+                                                    <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3"></i>
+                                                    178
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="similar" >
+                <div class="news">
+                    <img src="images/636238.jpg" alt=""> 
+                    <p> 
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi. ...
+                        </a>
+                    </p>
+                    <div class="posttime">
+                        <small>
+                            <div class="time">
+                                    <i class="fa fa-clock"></i>23:00, 
+                                    23.03.2020
+                            </div>
+                        </small>
+                    </div>
+                </div> 
+                <div class="news">
+                    <img src="images/lamgswzlma0gkqikt_66qaones8.jpeg" alt=""> 
+                    <p> 
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi. ...
+                        </a>
+                    </p>
+                    <div class="posttime">
+                        <small>
+                            <div class="time">
+                               <i class="fa fa-clock"></i>23:00, 
+                               23.03.2020
+                           </div>
+                        </small>
+                    </div>
+                </div>
+                <div class="news"><img src="images/DrJAK7TXQAEqeMp.jpg_large" alt=""> 
+                    <p> 
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi. ...
+                        </a>
+                    </p>
+                    <div class="posttime">
+                        <small>
+                            <div class="time">
+                                <i class="fa fa-clock"></i>23:00, 
+                                23.03.2020
+                            </div>
+                        </small>
+                     </div>
+                </div>
+                <div class="news">
+                    <img src="images/e6ce96es-1920.jpg" alt=""> 
+                    <p> 
+                        <a href="#">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi. ...
+                        </a>
+                    </p>
+                    <div class="posttime">
+                        <small>
+                            <div class="time">
+                               <i class="fa fa-clock"></i>23:00, 
+                               23.03.2020
+                           </div>
+                       </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>    
+        <footer class="col-xs-12" style="padding: 20px 0 20px 0;">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted text-center">Copyright © Your Website 2019</p>
+            </div>
+        </footer>
+                    
+    <script> 
+    require(['jq!starfield/jquery.mod', 'modules/cookiemanager/cookiemanager', 'modules/iebackground/iebackground'], 
+    function ($, cookieManager, bg) 
+    { if (cookieManager.getCookie("WSB.ForceDesktop")) { $('.view-as-mobile', '.wsb-canvas-page-container').show().find('a').bind('click',
+     function () { cookieManager.eraseCookie("WSB.ForceDesktop"); window.location.reload(true); }); } 
+     bg.fixBackground(); }); 
+     </script>
+
+    <script>
+
+    var addthis_config = { ui_language: "en" };</script>
+
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5162fff83017c0e0"></script>
+
+    <script>addthis.layers({ 'share': { 'mobile': false } });</script>
+        <script>
+            var sendLikeRequest = function(id) {
+                };
+                $(document).on('click', '.like', function(e) {
+                    e.preventDefault();
+                    sendLikeRequest($(this).data('id'));
+                })
+        </script>
+        <script>$('.count').each(function() {
+                    var clicks = Math.floor((Math.random() * 100) + 1);
+                    $(this).text(clicks);
+                  });
+
+                  $(".like_button button").on("click", function() {
+                    var $count = $(this).parent().find('.count');
+                    $count.html($count.html() * 1 + 1);
+                  });
+        </script>
+    </body>
+</html>
