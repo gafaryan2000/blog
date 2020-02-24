@@ -191,7 +191,7 @@
                                             obj.innerHTML = "Unfollow"
                                         }else if (obj.id == "unfollow"){
                                             obj.id = "follow"
-                                            obj.innerHTML = "Follow"
+                                            obj.innerHTML = '<i class="fas fa-long-arrow-alt-right"></i>Follow'
                                         }
                                     }
                                     function myFunct(obj){
@@ -199,8 +199,9 @@
                                             obj.id = "cancel_request"
                                             obj.innerHTML = "Cancel Request"
                                         }else if (obj.id == "cancel_request"){
+                                            
                                             obj.id = "befriend"
-                                            obj.innerHTML = "Befriend"
+                                            obj.innerHTML = '<i class="fas fa-user"></i>Befriend'
                                         }
                                     }
                                     
